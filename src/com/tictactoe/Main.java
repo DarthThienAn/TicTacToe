@@ -11,7 +11,7 @@ import android.widget.TextView;
 
 public class Main extends Activity {
 
-	MainTest connect = new MainTest();
+	Connect connect = new Connect();
 
 	private int testCount = 0;
 	
