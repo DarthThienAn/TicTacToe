@@ -2,15 +2,12 @@ package com.tictactoe;
 
 import android.app.Activity;
 import android.os.Bundle;
-import android.os.Handler;
-import android.os.Message;
 import android.util.Log;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.view.Window;
 import android.widget.Button;
 import android.widget.EditText;
-import android.widget.ListAdapter;
 import android.widget.TextView;
 
 public class Start extends Activity {
@@ -26,8 +23,8 @@ public class Start extends Activity {
 	private Button connectButton;
 	private boolean serverSide = false;
 	private boolean clientSide = false;
-	private EditText serverMsg;
-	private EditText clientMsg;
+//	private EditText serverMsg;
+//	private EditText clientMsg;
 	private EditText serverIp;
 	private boolean connected = false;
 
@@ -68,10 +65,10 @@ public class Start extends Activity {
 	private boolean press8x = false;
 	private boolean press9x = false;
 
-	private Handler handler = new Handler();
+//	private Handler handler = new Handler();
 
-	private static final long mDelay = 50;
-	private long mLastMove;
+//	private static final long mDelay = 50;
+//	private long mLastMove;
 	
 	
 //	private RefreshHandler mRefreshHandler = new RefreshHandler();
@@ -162,160 +159,164 @@ public class Start extends Activity {
 				{
 					press1x = true;
 					
-					handler.post(new Runnable() {
-						@Override
-						public void run() {
-							if (serverSide)
-								button1.setText("O");
-							else if (clientSide)
-								button1.setText("X");
-						}
-					});
+//					handler.post(new Runnable() {
+//						@Override
+//						public void run() {
+//							if (serverSide)
+//								button1.setText("O");
+//							else if (clientSide)
+//								button1.setText("X");
+//						}
+//					});
+					if (serverSide)
+						button1.setText("O");
+					else if (clientSide)
+						button1.setText("X");
 				}
 				if (input.equals("press2"))
 				{
 					press2x = true;
 					
-					handler.post(new Runnable() {
-						@Override
-						public void run() {
-							if (serverSide)
-								button2.setText("O");
-							else if (clientSide)
-								button2.setText("X");
-						}
-					});
-//					if (serverSide)
-//						button2.setText("O");
-//					else if (clientSide)
-//						button2.setText("X");
+//					handler.post(new Runnable() {
+//						@Override
+//						public void run() {
+//							if (serverSide)
+//								button2.setText("O");
+//							else if (clientSide)
+//								button2.setText("X");
+//						}
+//					});
+					if (serverSide)
+						button2.setText("O");
+					else if (clientSide)
+						button2.setText("X");
 				}
 				if (input.equals("press3"))
 				{
 					press3x = true;
 					
-					handler.post(new Runnable() {
-						@Override
-						public void run() {
-							if (serverSide)
-								button3.setText("O");
-							else if (clientSide)
-								button3.setText("X");
-						}
-					});
-//					if (serverSide)
-//						button3.setText("O");
-//					else if (clientSide)
-//						button3.setText("X");
+//					handler.post(new Runnable() {
+//						@Override
+//						public void run() {
+//							if (serverSide)
+//								button3.setText("O");
+//							else if (clientSide)
+//								button3.setText("X");
+//						}
+//					});
+					if (serverSide)
+						button3.setText("O");
+					else if (clientSide)
+						button3.setText("X");
 				}
 				if (input.equals("press4"))
 				{
 					press4x = true;
 					
-					handler.post(new Runnable() {
-						@Override
-						public void run() {
-							if (serverSide)
-								button4.setText("O");
-							else if (clientSide)
-								button4.setText("X");
-						}
-					});
-//					if (serverSide)
-//						button4.setText("O");
-//					else if (clientSide)
-//						button4.setText("X");
+//					handler.post(new Runnable() {
+//						@Override
+//						public void run() {
+//							if (serverSide)
+//								button4.setText("O");
+//							else if (clientSide)
+//								button4.setText("X");
+//						}
+//					});
+					if (serverSide)
+						button4.setText("O");
+					else if (clientSide)
+						button4.setText("X");
 				}
 				if (input.equals("press5"))
 				{
 					press5x = true;
 
-					handler.post(new Runnable() {
-						@Override
-						public void run() {
-							if (serverSide)
-								button5.setText("O");
-							else if (clientSide)
-								button5.setText("X");
-						}
-					});
+//					handler.post(new Runnable() {
+//						@Override
+//						public void run() {
+//							if (serverSide)
+//								button5.setText("O");
+//							else if (clientSide)
+//								button5.setText("X");
+//						}
+//					});
 
-//					if (serverSide)
-//						button5.setText("O");
-//					else if (clientSide)
-//						button5.setText("X");
+					if (serverSide)
+						button5.setText("O");
+					else if (clientSide)
+						button5.setText("X");
 				}
 				if (input.equals("press6"))
 				{
 					press6x = true;
 					
-					handler.post(new Runnable() {
-						@Override
-						public void run() {
-							if (serverSide)
-								button6.setText("O");
-							else if (clientSide)
-								button6.setText("X");
-						}
-					});
-//					if (serverSide)
-//						button6.setText("O");
-//					else if (clientSide)
-//						button6.setText("X");
+//					handler.post(new Runnable() {
+//						@Override
+//						public void run() {
+//							if (serverSide)
+//								button6.setText("O");
+//							else if (clientSide)
+//								button6.setText("X");
+//						}
+//					});
+					if (serverSide)
+						button6.setText("O");
+					else if (clientSide)
+						button6.setText("X");
 				}
 				if (input.equals("press7"))
 				{
 					press7x = true;
 					
-					handler.post(new Runnable() {
-						@Override
-						public void run() {
-							if (serverSide)
-								button7.setText("O");
-							else if (clientSide)
-								button7.setText("X");
-						}
-					});
-//					if (serverSide)
-//						button7.setText("O");
-//					else if (clientSide)
-//						button7.setText("X");
+//					handler.post(new Runnable() {
+//						@Override
+//						public void run() {
+//							if (serverSide)
+//								button7.setText("O");
+//							else if (clientSide)
+//								button7.setText("X");
+//						}
+//					});
+					if (serverSide)
+						button7.setText("O");
+					else if (clientSide)
+						button7.setText("X");
 				}
 				if (input.equals("press8"))
 				{
 					press8x = true;
 					
-					handler.post(new Runnable() {
-						@Override
-						public void run() {
-							if (serverSide)
-								button8.setText("O");
-							else if (clientSide)
-								button8.setText("X");
-						}
-					});
-//					if (serverSide)
-//						button8.setText("O");
-//					else if (clientSide)
-//						button8.setText("X");
+//					handler.post(new Runnable() {
+//						@Override
+//						public void run() {
+//							if (serverSide)
+//								button8.setText("O");
+//							else if (clientSide)
+//								button8.setText("X");
+//						}
+//					});
+					if (serverSide)
+						button8.setText("O");
+					else if (clientSide)
+						button8.setText("X");
 				}
 				if (input.equals("press9"))
 				{
 					press9x = true;
 					
-					handler.post(new Runnable() {
-						@Override
-						public void run() {
-							if (serverSide)
-								button9.setText("O");
-							else if (clientSide)
-								button9.setText("X");
-						}
-					});
-//					if (serverSide)
-//						button9.setText("O");
-//					else if (clientSide)
-//						button9.setText("X");
+//					handler.post(new Runnable() {
+//						@Override
+//						public void run() {
+//							if (serverSide)
+//								button9.setText("O");
+//							else if (clientSide)
+//								button9.setText("X");
+//						}
+//					});
+					if (serverSide)
+						button9.setText("O");
+					else if (clientSide)
+						button9.setText("X");
 				}
 			}
 		}
